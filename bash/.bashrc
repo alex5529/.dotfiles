@@ -117,4 +117,12 @@ if ! shopt -oq posix; then
 fi
 
 export PATH="$HOME/.local/bin:$PATH"
-bindkey -r ^f "tmux-sessionizer\n"
+#bindkey -r ^F "tmux-sessionizer\n"
+#bind '"^F":"tmux-sessionizer\n"'
+bind '"\C-f": "tmux-sessionizer\n"'
+
+# Append this line to ~/.zshrc to enable fzf keybindings for bash:
+source /usr/share/doc/fzf/examples/key-bindings.bash
+
+# Append this line to ~/.zshrc to enable fuzzy auto-completion for bash:
+source /usr/share/doc/fzf/examples/completion.bash

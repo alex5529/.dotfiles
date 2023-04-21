@@ -1,0 +1,20 @@
+[user]
+	email = alexander.lundstrom@precisebiometrics.com
+	name = alexanderl
+[core]
+	;editor = code --wait
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	;cmd = code --wait $MERGED
+[alias]
+	co = checkout
+	br = branch
+	fe = fetch --all
+	st = status
+	publish = push -u origin HEAD
+	prunerepo = fetch --all --tags --force --prune --prune-tags
